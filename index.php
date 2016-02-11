@@ -1,3 +1,11 @@
+<?php 
+
+include 'connection.inc.php';
+
+$conn = dbConnect(); 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +16,7 @@
 	<form action="index.php" method="post">
 		<?php if ($_POST) { ?>
 		<div>
-			<textarea name="posted-question"><?php echo ($_POST['question'])?></textarea>
+			<p name="posted-question"><?php echo ($_POST['question'])?></p>
 		</div>
 		<?php } ?>
 		<div>
